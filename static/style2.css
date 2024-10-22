@@ -1,0 +1,102 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: rgb(122, 113, 113);
+    position: relative;
+    overflow: hidden;
+    background-image: url('/static/img/predecir.mp4'); /* Asegúrate que la ruta es correcta */
+    background-size: cover;
+    background-position: center;
+  }
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Asegura que el video esté detrás del contenido */
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    position: relative; /* Para que el contenedor esté por encima del video */
+    z-index: 1; /* Asegura que el contenedor esté encima del video */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    padding: 20px;
+    padding-bottom: 60px;
+    margin: 10px; /* Centrar el contenedor */
+    max-width: 600px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    text-align: center; /* Centrar texto */
+}
+
+h1 {
+    color: #333;
+    font-size: 3.3em;
+}
+
+p {
+    color: #555;
+    font-size: 1.5rem;
+}
+
+.resultado {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #0f0806; /* Color distintivo para el resultado */
+}
+
+/* CSS */
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}

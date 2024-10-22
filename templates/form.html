@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción de Aprobación de Préstamos</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="/static/img/mano.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        <form action="/predecir" method="post">
+            <h1>Predicción de Aprobación de Préstamos</h1>
+            <label for="ingresos">Ingresos:</label>
+            <input type="text" id="ingresos" name="ingresos" required>
+
+            <label for="historial_crediticio">Historial Crediticio:</label>
+            <input type="text" id="historial_crediticio" name="historial_crediticio" required>
+
+            <label for="estado_civil">Estado Civil (0 para soltero, 1 para casado):</label>
+            <input type="text" id="estado_civil" name="estado_civil" required>
+
+            <label for="empleo">Empleo (1 para empleado, 0 para desempleado):</label>
+            <input type="text" id="empleo" name="empleo" required>
+
+            <label for="monto_solicitado">Monto Solicitado:</label>
+            <input type="text" id="monto_solicitado" name="monto_solicitado" required>
+
+            <label for="plazo_prestamo">Plazo del Préstamo (en meses):</label>
+            <input type="text" id="plazo_prestamo" name="plazo_prestamo" required>
+
+            <label for="tasa_interes">Tasa de Interés:</label>
+            <input type="text" id="tasa_interes" name="tasa_interes" required>
+
+            <div class="button-container">
+                <button type="submit" value="Predecir" class="button-71" role="button">Predecir</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
